@@ -20,24 +20,18 @@ const reviews = [
   },
 ];
 
-// More visually appealing hardcoded rotation values
-const rotationValues = [-1, 1, 1, -1]; // Adjusted for better visual effect
-
 const Reviews: React.FC = () => {
   return (
-    <section className="py-16 px-4 bg-primary-dark bg-opacity-50 backdrop-blur-lg">
+    <section className="py-16 px-4 bg-primary-dark bg-opacity-50">
       <div className="w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-          What Our Customers Say
+        What Our Customers Say
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {reviews.map((review, index) => (
             <div
               key={index}
               className="bg-primary bg-opacity-60 p-5 rounded-xl shadow-lg"
-              style={{
-                transform: window.innerWidth >= 768 ? `rotate(${rotationValues[index]}deg)` : 'none', // Apply rotation only on larger screens
-              }}
             >
               <div className="flex items-center mb-3">
                 {[...Array(5)].map((_, i) => (
