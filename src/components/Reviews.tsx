@@ -21,7 +21,7 @@ const reviews = [
 ];
 
 // More visually appealing hardcoded rotation values
-const rotationValues = [2, 1, 3, -2]; // Adjusted for better visual effect
+const rotationValues = [-1, 1, 1, -1]; // Adjusted for better visual effect
 
 const Reviews: React.FC = () => {
   return (
