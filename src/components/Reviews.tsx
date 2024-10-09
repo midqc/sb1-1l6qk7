@@ -2,6 +2,7 @@ import React from 'react';
 import { Star } from 'lucide-react';
 
 const reviews = [
+  { name: 'Ridhman Singh', date: '4 weeks ago', text: '"Good car wash !"' },
   {
     name: 'Thejohn Karan',
     date: 'a year ago',
@@ -12,7 +13,6 @@ const reviews = [
     date: 'a year ago',
     text: '"Best car wash in the area, very humble and genuine person. 👌"',
   },
-  { name: 'Ridhman Singh', date: '4 weeks ago', text: '"Good car wash !"' },
   {
     name: 'Jasdeep Singh',
     date: 'a year ago',
