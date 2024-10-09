@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           </p>
           <a
             href="#services"
-            className="bg-accent hover:bg-secondary transition duration-300 px-6 py-3 rounded-lg text-lg font-semibold text-primary-dark"
+            className="bg-accent hover:bg-secondary transition duration-300 px-6 py-3 rounded-sm text-lg font-semibold text-primary-dark"
           >
             Explore Our Services
           </a>

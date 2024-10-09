@@ -53,11 +53,11 @@ const Services: React.FC = () => {
           What We Offer
         </h2>
         {/* Adjusted the gap to 'gap-4' for smaller spacing */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-primary p-6 rounded-xl shadow-lg cursor-pointer flex flex-col items-center text-center bg-opacity-40 hover:bg-opacity-80 transition duration-300"
+              className="bg-primary p-6 rounded-md shadow-lg cursor-pointer flex flex-col items-center text-center bg-opacity-40 hover:bg-opacity-80 transition duration-300"
               onClick={() => handleServiceClick(service.message)}
             >
               <div className="bg-accent bg-opacity-20 p-3 rounded-full mb-4">

@@ -11,7 +11,7 @@ const reviews = [
   {
     name: 'Milan Thind',
     date: 'a year ago',
-    text: '"Best car wash in the area, very humble and genuine person. 👌"',
+    text: '"Best car wash in the area!"',
   },
   {
     name: 'Jasdeep Singh',
@@ -31,7 +31,7 @@ const Reviews: React.FC = () => {
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-primary bg-opacity-60 p-5 rounded-xl shadow-lg"
+              className="bg-primary bg-opacity-60 p-5 rounded-md shadow-lg"
             >
               <div className="flex items-center mb-3">
                 {[...Array(5)].map((_, i) => (
