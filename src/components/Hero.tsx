@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* WhatsApp Link in one line */}
-        <div className="translate-y-[8rem] flex items-center opacity-20">
+        <div className="translate-y-[12rem] flex items-center opacity-20">
           <p className="text-lg mb-0">Need a website?</p>
           <a 
             href={whatsappLink} 
