@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         backgroundImage: `url('/noise.jpg'), linear-gradient(to bottom, rgba(21, 36, 13, 0.3), rgba(15, 26, 10, 0.8))`, // Adjusted gradient with opacity
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundBlendMode: 'overlay',  // Try using 'overlay' instead of 'multiply' for a lighter blend
+        backgroundBlendMode: 'darken',  // Try using 'overlay' instead of 'multiply' for a lighter blend
         backgroundColor: '#0a0f00',  // Custom Tailwind background color
       }}
     >
