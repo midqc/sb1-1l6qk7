@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MapPin } from 'lucide-react';
 
 interface NavbarProps {
@@ -6,11 +6,24 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ isVisible }) => {
+  const [isAtTop, setIsAtTop] = useState(true);
+
+  const handleScroll = () => {
+    setIsAtTop(window.scrollY === 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <nav
-      className={`fixed w-full bg-primary bg-opacity-90 transition-transform duration-300 ease-in-out z-50 ${
-        isVisible ? '' : 'nav-hidden'
-      }`}
+      className={`fixed w-full transition-transform duration-300 ease-in-out z-50 ${
+        isAtTop ? 'bg-transparent' : 'bg-primary bg-opacity-90'
+      } ${isVisible ? '' : 'nav-hidden'}`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center backdrop-blur-xl">
         <h1 className="text-3xl font-medium text-white max-w-[30px] sm:max-w-full text-center sm:text-left">
