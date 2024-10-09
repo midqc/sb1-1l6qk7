@@ -4,41 +4,42 @@ import { Droplet, Brush, Sparkles, Eraser, Car, Truck } from 'lucide-react';
 const services = [
   {
     name: 'Foam Car Wash',
-    description: 'Gentle yet effective cleaning',
+    description: 'Gentle foam cleaning that lifts dirt without scratching your vehicle’s surface, perfect for maintaining your car’s shine.',
     icon: Droplet,
     message: "I'm interested in your Foam Car Wash service",
   },
   {
     name: 'Dry Clean',
-    description: 'Spotless interior detailing',
+    description: 'Thorough interior detailing that removes dust, stains, and odors, leaving your upholstery fresh and inviting.',
     icon: Brush,
     message: "I'd like to know more about your Dry Clean service",
   },
   {
     name: 'Polishing',
-    description: "Restore your car's shine",
+    description: 'Professional polishing to restore your car’s shine and enhance the clarity of the paint, making it look brand new.',
     icon: Sparkles,
     message: "I'm interested in your Car Polishing service",
   },
   {
     name: 'Rubbing',
-    description: 'Remove scratches and swirls',
+    description: 'Gentle technique to remove scratches and swirls, ensuring a smooth finish without damaging the paint.',
     icon: Eraser,
     message: "I'd like to inquire about your Car Rubbing service",
   },
   {
     name: 'Detailing',
-    description: 'Comprehensive car care',
+    description: 'Complete car care that cleans and protects both the interior and exterior for a like-new appearance.',
     icon: Car,
     message: "I'm interested in your Car Detailing service",
   },
   {
     name: 'Dealer Washing',
-    description: 'Specialized fleet services',
+    description: 'Specialized washing services for dealerships, ensuring your fleet looks professional and well-maintained.',
     icon: Truck,
     message: "I'd like to know more about your Dealer Washing service",
   },
 ];
+
 
 const Services: React.FC = () => {
   const handleServiceClick = (message: string) => {
