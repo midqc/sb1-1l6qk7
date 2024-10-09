@@ -48,7 +48,7 @@ const Services: React.FC = () => {
 
   return (
     <section id="services" className="py-24 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto ">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
           Our Services
         </h2>
@@ -56,7 +56,7 @@ const Services: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-primary bg-opacity-40 p-6 rounded-2xl shadow-lg cursor-pointer flex flex-col items-center text-center"
+              className="bg-primary p-6 rounded-2xl shadow-lg cursor-pointer flex flex-col items-center text-center bg-opacity-40 hover:bg-opacity-80 transition duration-300"
               onClick={() => handleServiceClick(service.message)}
             >
               <div className="bg-accent bg-opacity-20 p-3 rounded-full mb-4">
@@ -66,6 +66,11 @@ const Services: React.FC = () => {
                 {service.name}
               </h3>
               <p className="text-sm text-lime-200">{service.description}</p>
+              <button
+                className="mt-2 text-sm text-lime-400 bg-transparent border-0 cursor-pointer"
+              >
+                Know More
+              </button>
             </div>
           ))}
         </div>
