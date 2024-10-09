@@ -57,11 +57,11 @@ const Services: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-primary p-6 rounded-2xl shadow-lg cursor-pointer flex flex-col items-center text-center bg-opacity-40 hover:bg-opacity-80 transition duration-300"
+              className="bg-primary p-6 rounded-xl shadow-lg cursor-pointer flex flex-col items-center text-center bg-opacity-40 hover:bg-opacity-80 transition duration-300"
               onClick={() => handleServiceClick(service.message)}
             >
               <div className="bg-accent bg-opacity-20 p-3 rounded-full mb-4">
-                <service.icon className="w-6 h-6 text-accent" />
+                <service.icon className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
                 {service.name}

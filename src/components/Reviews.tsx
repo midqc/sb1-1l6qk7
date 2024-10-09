@@ -31,7 +31,7 @@ const Reviews: React.FC = () => {
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-primary bg-opacity-60 p-5 rounded-lg shadow-lg"
+              className="bg-primary bg-opacity-60 p-5 rounded-xl shadow-lg"
             >
               <div className="flex items-center mb-3">
                 {[...Array(5)].map((_, i) => (
