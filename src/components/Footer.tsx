@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
           Get Directions
         </a>
         <p className="text-sm text-lime-300">
-          © {currentYear} Thind Car Wash. All rights reserved.
+          © {currentYear} Thind Car Wash™. All rights reserved.
         </p>
       </div>
     </footer>

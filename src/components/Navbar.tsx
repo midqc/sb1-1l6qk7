@@ -13,7 +13,7 @@ const Navbar: React.FC<NavbarProps> = ({ isVisible }) => {
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center backdrop-blur-xl">
-        <h1 className="text-3xl font-bold text-white">Thind Car Wash</h1>
+        <h1 className="text-3xl font-medium text-white">Thind Car Wash™</h1>
         <div className="flex space-x-4">
           <a
             href="https://www.google.com/maps/search/?api=1&query=Thind%20Car%20Wash%2C%20plot%20no%20250%2C%20Mattaur%2C%20Sector%2070%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab%20160070"
