@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
     <div
       className="min-h-screen flex items-center justify-center pt-24 pb-16 px-4 text-center text-white"
       style={{
-        backgroundImage: `url('/noise.jpg'), linear-gradient(to bottom, rgba(21, 36, 13, 0.3), rgba(15, 26, 10, 0.8))`, // Adjusted gradient with opacity
+        // backgroundImage: `url('/noise.jpg'), linear-gradient(to bottom, rgba(21, 36, 13, 0.3), rgba(15, 26, 10, 0.8))`, // Adjusted gradient with opacity
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundBlendMode: 'darken',  // Try using 'overlay' instead of 'multiply' for a lighter blend
