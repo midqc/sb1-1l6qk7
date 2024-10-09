@@ -53,7 +53,7 @@ const Services: React.FC = () => {
           What We Offer
         </h2>
         {/* Adjusted the gap to 'gap-4' for smaller spacing */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
