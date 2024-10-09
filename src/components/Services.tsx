@@ -16,7 +16,7 @@ const services = [
   },
   {
     name: 'Polishing',
-    description: 'Restores shine and enhances paint clarity.',
+    description: 'Restores shine and improves paint clarity for a vibrant, polished finish.',
     icon: Sparkles,
     message: "I'm interested in your Car Polishing service",
   },
