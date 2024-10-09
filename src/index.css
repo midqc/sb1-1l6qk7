@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #0a0f00;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #15240d 0%, #0a0f00 100%);
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+}
