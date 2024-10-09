@@ -4,37 +4,37 @@ import { Droplet, Brush, Sparkles, Eraser, Car, Truck } from 'lucide-react';
 const services = [
   {
     name: 'Foam Car Wash',
-    description: 'Gentle foam cleaning that lifts dirt without scratching your vehicle’s surface, perfect for maintaining your car’s shine.',
+    description: 'Gentle foam cleaning that lifts dirt without scratching.',
     icon: Droplet,
     message: "I'm interested in your Foam Car Wash service",
   },
   {
     name: 'Dry Clean',
-    description: 'Thorough interior detailing that removes dust, stains, and odors, leaving your upholstery fresh and inviting.',
+    description: 'Thorough interior detailing that removes dust and odors.',
     icon: Brush,
     message: "I'd like to know more about your Dry Clean service",
   },
   {
     name: 'Polishing',
-    description: 'Professional polishing to restore your car’s shine and enhance the clarity of the paint, making it look brand new.',
+    description: 'Restores shine and enhances paint clarity.',
     icon: Sparkles,
     message: "I'm interested in your Car Polishing service",
   },
   {
     name: 'Rubbing',
-    description: 'Gentle technique to remove scratches and swirls, ensuring a smooth finish without damaging the paint.',
+    description: 'Removes scratches and swirls for a smooth finish.',
     icon: Eraser,
     message: "I'd like to inquire about your Car Rubbing service",
   },
   {
     name: 'Detailing',
-    description: 'Complete car care that cleans and protects both the interior and exterior for a like-new appearance.',
+    description: 'Comprehensive cleaning and protection for your car.',
     icon: Car,
     message: "I'm interested in your Car Detailing service",
   },
   {
     name: 'Dealer Washing',
-    description: 'Specialized washing services for dealerships, ensuring your fleet looks professional and well-maintained.',
+    description: 'Professional washing services for dealerships.',
     icon: Truck,
     message: "I'd like to know more about your Dealer Washing service",
   },
@@ -51,7 +51,7 @@ const Services: React.FC = () => {
     <section id="services" className="py-24 px-4">
       <div className="max-w-6xl mx-auto ">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
-          Our Services
+        What We Offer
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (

@@ -25,13 +25,13 @@ const Reviews: React.FC = () => {
     <section className="py-16 px-4 bg-primary-dark bg-opacity-50">
       <div className="w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-          Customer Reviews
+        What Our Customers Say
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-primary bg-opacity-70 p-5 rounded-lg shadow-lg"
+              className="bg-primary bg-opacity-60 p-5 rounded-lg shadow-lg"
             >
               <div className="flex items-center mb-3">
                 {[...Array(5)].map((_, i) => (
