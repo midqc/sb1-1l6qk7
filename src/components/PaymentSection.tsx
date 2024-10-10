@@ -3,19 +3,19 @@ import { CreditCard } from 'lucide-react';
 
 const PaymentSection: React.FC = () => {
   return (
-    <section className="py-32 px-4 bg-primary-dark bg-opacity-30">
+    <section className="py-32 px-4 bg-primary-dark bg-opacity-30 border-t-[1px] border-t-lime-800 border-opacity-20">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-16 text-white">
           Payment Options
         </h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-16">
-          <div className="bg-primary bg-opacity-60 p-8 rounded-md shadow-lg relative">
+          <div className=" p-8 rounded-md relative">
             <img
               src="/qrcode.png"
-              alt="UPI QR Code"
+              alt="QR Code"
               className="w-64 h-64 mx-auto mb-4 qr-code-filter"
             />
-            <p className="text-lime-200 text-lg mb-2">Scan the QR code to pay</p>
+            <p className="text-lime-200 text-lg mb-2">Scan to pay</p>
           </div>
           <div className="flex flex-col items-center">
             <a

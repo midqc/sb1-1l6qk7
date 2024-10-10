@@ -47,7 +47,7 @@ const Services: React.FC = () => {
   };
 
   return (
-    <section id="services" className="py-32 px-4 bg-primary-dark bg-opacity-30">
+    <section id="services" className="py-32 px-4 bg-primary-dark bg-opacity-30 border-t-[1px] border-t-lime-800 border-opacity-20">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
           What We Offer
