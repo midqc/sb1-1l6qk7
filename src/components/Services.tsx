@@ -47,13 +47,12 @@ const Services: React.FC = () => {
   };
 
   return (
-    <section id="services" className="py-24 px-4">
+    <section id="services" className="py-32 px-4 bg-primary-dark bg-opacity-30">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
           What We Offer
         </h2>
-        {/* Adjusted the gap to 'gap-4' for smaller spacing */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
@@ -68,7 +67,7 @@ const Services: React.FC = () => {
               </h3>
               <p className="text-sm text-lime-200">{service.description}</p>
               <button
-                className="mt-2 text-sm text-lime-400 bg-transparent border-0 cursor-pointer font-medium"
+                className="mt-4 text-sm text-lime-400 bg-transparent border-0 cursor-pointer font-medium"
               >
                 Know More
               </button>
