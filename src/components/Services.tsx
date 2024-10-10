@@ -68,7 +68,7 @@ const Services: React.FC = () => {
               </h3>
               <p className="text-sm text-lime-200">{service.description}</p>
               <button
-                className="mt-2 text-sm text-lime-400 bg-transparent border-0 cursor-pointer"
+                className="mt-2 text-sm text-lime-400 bg-transparent border-0 cursor-pointer font-medium"
               >
                 Know More
               </button>

@@ -21,11 +21,15 @@ const Navbar: React.FC<NavbarProps> = ({ isVisible }) => {
 
   return (
     <nav
-      className={`fixed w-full transition-transform duration-300 ease-in-out z-50 ${
+      className={`fixed w-full z-50 transition-all duration-300 ease-in-out ${
         isAtTop ? 'bg-transparent' : 'bg-primary bg-opacity-90'
       } ${isVisible ? '' : 'nav-hidden'}`}
     >
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center backdrop-blur-xl">
+      <div
+        className={`container mx-auto px-6 py-4 flex justify-between items-center ${
+          isAtTop ? '' : 'backdrop-blur-xl'
+        }`}
+      >
         <h1 className="text-3xl font-medium text-white max-w-[30px] sm:max-w-full text-center sm:text-left">
           Thind Car Wash™
         </h1>
@@ -43,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ isVisible }) => {
             href="https://wa.me/919646868859?text=I'm%20interested%20in%20your%20car%20wash%20services"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center bg-accent hover:bg-secondary transition duration-300 px-4 py-2 rounded-sm text-sm text-primary-dark"
+            className="flex items-center bg-accent hover:bg-secondary transition duration-300 px-4 py-2 rounded-sm text-sm text-primary-dark font-semibold"
           >
             <svg
               viewBox="0 0 24 24"

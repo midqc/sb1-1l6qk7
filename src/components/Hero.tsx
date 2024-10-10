@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Hero: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false); // State to control visibility
   const phoneNumber = "+919915172910"; // Your phone number
-  const message = "I'm interested in getting a website quickly."; // Updated custom message
+  const message = "I would like to discuss having a website developed. What options do you offer?";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  useEffect(() => {
+    // Set visibility to true after the component mounts
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 0); // Optional delay to allow for transition effect
+
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, []);
 
   return (
     <div
@@ -14,7 +24,8 @@ const Hero: React.FC = () => {
         backgroundPosition: 'center',
         backgroundBlendMode: 'darken',  // Try using 'overlay' instead of 'multiply' for a lighter blend
         backgroundColor: 'rgba(10, 15, 0, 0.8)',  // RGBA value with 0.8 opacity
-
+        opacity: isVisible ? 1 : 0,  // Apply opacity based on visibility state
+        transition: 'opacity 600ms ease-in'  // Slower fade transition
       }}
     >
       <div className="flex flex-col items-center">
