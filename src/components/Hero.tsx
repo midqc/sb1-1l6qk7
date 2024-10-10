@@ -46,12 +46,16 @@ const Hero: React.FC = () => {
 
         {/* WhatsApp Link in one line */}
         <div className="relative top-32 flex flex-col items-center opacity-20 hover:opacity-60 transition duration-300">
-          <p className="text-lg mb-0">Need a website?</p>
+          <a
+           href={whatsappLink} 
+           target="_blank" 
+           rel="noopener noreferrer">Need a website?</a>
+           
           <a 
             href={whatsappLink} 
             target="_blank" 
             rel="noopener noreferrer" // Ensures security when opening new tabs
-            className="underline text-lime-200 hover:text-lime-300 ml-2" // Added margin left for spacing
+            className="underline text-lime-200 ml-2" // Added margin left for spacing
           >
             Click here to get started.
           </a>
